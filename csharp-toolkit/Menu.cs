@@ -11,7 +11,9 @@ namespace csharp_toolkit
         public Menu() { }
         public void Show()
         {
-            Alfabeto Alfabeto = new Alfabeto();
+            Alfabeto alfabeto = new Alfabeto();
+
+            Decisor decisor = new Decisor();
 
             while (true)
             {
@@ -34,9 +36,9 @@ namespace csharp_toolkit
                 Console.WriteLine();
 
                 if (opcaoEscolhida == 0) return;
-                if (opcaoEscolhida == 1) Alfabeto.Show();
+                if (opcaoEscolhida == 1) alfabeto.Show();
                 //if (opcaoEscolhida == 2) ModuloAv1Item2();
-                //if (opcaoEscolhida == 3) ModuloAv1Item3();
+                if (opcaoEscolhida == 3) decisor.Show();
                 //if (opcaoEscolhida == 4) ModuloAv1Item4();
                 //if (opcaoEscolhida == 5) ModuloAv1Item5();
                 //if (opcaoEscolhida == 6) ModuloAv2Item1();
