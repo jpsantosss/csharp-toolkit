@@ -11,6 +11,8 @@ namespace csharp_toolkit
         public Menu() { }
         public void Show()
         {
+            Alfabeto Alfabeto = new Alfabeto();
+
             while (true)
             {
                 Console.WriteLine("Projeto Toolkit - UNIFESO");
@@ -31,8 +33,8 @@ namespace csharp_toolkit
                 int opcaoEscolhida = LerOpcaoDoMenu(0, 10);
                 Console.WriteLine();
 
-                //if (opcaoEscolhida == 0) return;
-                //if (opcaoEscolhida == 1) ModuloAv1Item1();
+                if (opcaoEscolhida == 0) return;
+                if (opcaoEscolhida == 1) Alfabeto.Show();
                 //if (opcaoEscolhida == 2) ModuloAv1Item2();
                 //if (opcaoEscolhida == 3) ModuloAv1Item3();
                 //if (opcaoEscolhida == 4) ModuloAv1Item4();
