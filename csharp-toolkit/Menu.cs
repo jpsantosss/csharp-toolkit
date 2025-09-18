@@ -15,6 +15,7 @@ namespace csharp_toolkit
 
             Decisor decisor = new Decisor();
             Avaliador avaliador = new Avaliador();
+            Reconhecedor reconhecedor = new Reconhecedor();
 
             while (true)
             {
@@ -41,7 +42,7 @@ namespace csharp_toolkit
                 //if (opcaoEscolhida == 2) ModuloAv1Item2();
                 if (opcaoEscolhida == 3) decisor.Show();
                 if (opcaoEscolhida == 4) avaliador.Show();
-                //if (opcaoEscolhida == 5) ModuloAv1Item5();
+                if (opcaoEscolhida == 5) reconhecedor.Show();
                 //if (opcaoEscolhida == 6) ModuloAv2Item1();
                 //if (opcaoEscolhida == 7) ModuloAv2Item2();
                 //if (opcaoEscolhida == 8) ModuloAv2Item3();
