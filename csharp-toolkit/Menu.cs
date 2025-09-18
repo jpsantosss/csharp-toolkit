@@ -12,7 +12,7 @@ namespace csharp_toolkit
         public void Show()
         {
             Alfabeto alfabeto = new Alfabeto();
-
+            Classificador classificador = new Classificador();
             Decisor decisor = new Decisor();
             Avaliador avaliador = new Avaliador();
             Reconhecedor reconhecedor = new Reconhecedor();
@@ -39,7 +39,7 @@ namespace csharp_toolkit
 
                 if (opcaoEscolhida == 0) return;
                 if (opcaoEscolhida == 1) alfabeto.Show();
-                //if (opcaoEscolhida == 2) ModuloAv1Item2();
+                if (opcaoEscolhida == 2) classificador.Show();
                 if (opcaoEscolhida == 3) decisor.Show();
                 if (opcaoEscolhida == 4) avaliador.Show();
                 if (opcaoEscolhida == 5) reconhecedor.Show();
