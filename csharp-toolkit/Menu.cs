@@ -54,6 +54,7 @@ namespace csharp_toolkit
 
         }
 
+        //Tratamento de erro na leitura da opção do menu
         private static int LerOpcaoDoMenu(int valorMinimo, int valorMaximo)
         {
             while (true)

@@ -11,10 +11,12 @@ namespace csharp_toolkit
         public Decisor() { }
         public void Show() 
         {
-            while(true){
+            // Loop para permitir múltiplos testes
+            while (true){
                 Console.WriteLine("Digite uma cadeia para verificar se ela termina em 'b'");
                 string? cadeia = Console.ReadLine();
 
+                // Verifica se a cadeia termina com 'b'
                 if (string.IsNullOrEmpty(cadeia))
                 {
                     Console.WriteLine("NAO");
@@ -27,9 +29,10 @@ namespace csharp_toolkit
                     else
                         Console.WriteLine("NAO");
                 }
+
+                // Pergunta se o usuário deseja testar outra cadeia
                 Console.WriteLine("\nDeseja testar outra cadeia? (S/N)");
                 string? resposta = Console.ReadLine();
-
                 if (resposta == null || resposta.Trim().ToUpper() != "S")
                 {
                     Console.WriteLine("Voltando ao menu...");

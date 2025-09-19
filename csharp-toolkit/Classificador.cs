@@ -10,6 +10,7 @@ namespace csharp_toolkit
     internal class Classificador
     {
         public Classificador() { }
+        // Classe para representar um problema
         public class Problema
         {
             public string Descricao { get; set; } = "";
@@ -17,6 +18,7 @@ namespace csharp_toolkit
         }
         public void Show()
         {
+            // Loop para permitir múltiplos testes
             while (true)
             {
                 Console.OutputEncoding = Encoding.UTF8;
@@ -29,10 +31,9 @@ namespace csharp_toolkit
                     { ""Descricao"": ""Verificar se um número é primo"", ""Classificacao"": ""T"" },
                     { ""Descricao"": ""Problema da parada de Turing"", ""Classificacao"": ""N"" }
                 ]";
-
                 var problemas = JsonSerializer.Deserialize<List<Problema>>(json);
 
-                //Tratamento de erro
+                // Verifica se a desserialização foi bem-sucedida
                 if (problemas == null)
                 {
                     Console.WriteLine("Erro ao carregar problemas.");
@@ -45,6 +46,7 @@ namespace csharp_toolkit
                 Console.WriteLine("=== Classificador T/I/N ===");
                 Console.WriteLine("Digite T para Tratável, I para Intratável ou N para Não computável.\n");
 
+                // Itera sobre os problemas e solicita a classificação ao usuário
                 foreach (var p in problemas)
                 {
                     Console.WriteLine($"Problema: {p.Descricao}");
@@ -70,15 +72,16 @@ namespace csharp_toolkit
                     }
                 }
 
+                // Exibe o resumo final
                 Console.WriteLine("=== Resumo Final ===");
                 Console.WriteLine($"Acertos: {acertos}");
                 Console.WriteLine($"Erros: {erros}");
                 double percentual = (double)acertos / problemas.Count * 100;
                 Console.WriteLine($"Percentual de acertos: {percentual:F2}%");
 
+                // Pergunta se o usuário deseja testar outra vez
                 Console.WriteLine("\nDeseja testar novamente? (S/N)");
                 string? respostaLoop = Console.ReadLine();
-
                 if (respostaLoop == null || respostaLoop.Trim().ToUpper() != "S")
                 {
                     Console.WriteLine("Voltando ao menu...");
