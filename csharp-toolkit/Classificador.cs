@@ -21,6 +21,7 @@ namespace csharp_toolkit
             // Loop para permitir múltiplos testes
             while (true)
             {
+                Console.WriteLine("\n=== Item 2 ===");
                 Console.OutputEncoding = Encoding.UTF8;
                 Console.InputEncoding = Encoding.UTF8;
 

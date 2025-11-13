@@ -9,7 +9,8 @@ namespace csharp_toolkit
         {
             while (true)
             {
-                Console.WriteLine("\n=== Item 2 — Decisores ===");
+                Console.WriteLine("\n=== Item 7 ===");
+
                 Console.WriteLine("1. L_fim_b (cadeias que terminam com 'b')");
                 Console.WriteLine("2. L_mult3_b (número de 'b' múltiplo de 3)");
                 Console.Write("Escolha: ");

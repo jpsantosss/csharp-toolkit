@@ -11,9 +11,11 @@ namespace csharp_toolkit
             // Loop para permitir múltiplos testes
             while (true)
             {
+
                 string json = System.IO.File.ReadAllText(@"dados\problemas_instancias.json");
                 var itens = JsonSerializer.Deserialize<Item[]>(json);
                 int acertos = 0;
+                Console.WriteLine("\n=== Item 6 ===");
                 foreach (var item in itens)
                 {
                     Console.WriteLine($"\nFrase: {item.texto}");

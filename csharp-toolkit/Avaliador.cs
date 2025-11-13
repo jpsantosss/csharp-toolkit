@@ -13,11 +13,12 @@ namespace csharp_toolkit
         {
             // Loop para permitir múltiplos testes
             while (true) {
+                Console.WriteLine("\n=== Item 4 ===");
+
                 Console.OutputEncoding = Encoding.UTF8;
                 Console.InputEncoding = Encoding.UTF8;
 
                 // Solicita a fórmula ao usuário
-                Console.WriteLine("=== Avaliador Proposicional Básico ===");
                 Console.WriteLine("Escolha a fórmula:");
                 Console.WriteLine("1 - (P ∧ Q) ∨ R - Conjunção/Disjunção");
                 Console.WriteLine("2 - (P → Q) ∧ R - Implicação");

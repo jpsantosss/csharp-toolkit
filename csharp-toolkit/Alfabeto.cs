@@ -14,6 +14,7 @@ namespace csharp_toolkit
             // Loop para permitir múltiplos testes
             while (true)
             {
+                Console.WriteLine("\n=== Item 1 ===");
                 // Solicita a cadeia de caracteres ao usuário
                 Console.WriteLine("Digite uma cadeia de caracteres composta apenas por 'a' e 'b':");
                 string? cadeia = Console.ReadLine();

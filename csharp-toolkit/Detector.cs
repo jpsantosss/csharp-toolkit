@@ -9,7 +9,8 @@ namespace csharp_toolkit
         {
             while (true)
             {
-                Console.WriteLine("\n=== Item 4 — Detector de Loop + Reflexão ===");
+                Console.WriteLine("\n=== Item 9 ===");
+
                 HashSet<int> estados = new();
                 int estado = 1;
                 int limite = 20;

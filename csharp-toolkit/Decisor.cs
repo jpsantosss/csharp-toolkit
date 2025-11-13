@@ -13,6 +13,8 @@ namespace csharp_toolkit
         {
             // Loop para permitir múltiplos testes
             while (true){
+                Console.WriteLine("\n=== Item 3 ===");
+
                 Console.WriteLine("Digite uma cadeia para verificar se ela termina em 'b'");
                 string? cadeia = Console.ReadLine();
 

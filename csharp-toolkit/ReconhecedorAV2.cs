@@ -10,7 +10,8 @@ namespace csharp_toolkit
         {
             while (true)
             {
-                Console.WriteLine("\n=== Item 3 — Reconhecedor ===");
+                Console.WriteLine("\n=== Item 8 ===");
+
                 Console.WriteLine("Linguagem: { a^n b^n | n ≥ 0 }");
                 Console.Write("Digite a cadeia sobre Σ={a,b} (vazio = ENTER): ");
                 string? cadeia = Console.ReadLine();
