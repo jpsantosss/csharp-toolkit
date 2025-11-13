@@ -17,7 +17,9 @@ namespace csharp_toolkit
             Avaliador avaliador = new Avaliador();
             Reconhecedor reconhecedor = new Reconhecedor();
             ProblemaInstancia problemainstancia = new ProblemaInstancia();
-            Decisores decisores = new Decisores();
+            DecisorAV2 decisorAV2 = new DecisorAV2();
+            ReconhecedorAV2 reconhecedorAV2 = new ReconhecedorAV2();
+
 
 
 
@@ -33,7 +35,7 @@ namespace csharp_toolkit
                 Console.WriteLine("---- AV2 ----");
                 Console.WriteLine("6) Problema x instância por JSON");
                 Console.WriteLine("7) Decisores: L_fim_b e L_mult3_b");
-                //Console.WriteLine("8) Reconhecedor que pode não terminar (a^i b^i)");
+                Console.WriteLine("8) Reconhecedor que pode não terminar (a^i b^i)");
                 //Console.WriteLine("9) Detector ingênuo de loop");
                 //Console.WriteLine("10) Simulador AFD simples (termina com 'b')");
                 Console.WriteLine("---- EXIT ----");
@@ -50,8 +52,8 @@ namespace csharp_toolkit
                 if (opcaoEscolhida == 4) avaliador.Show();
                 if (opcaoEscolhida == 5) reconhecedor.Show();
                 if (opcaoEscolhida == 6) problemainstancia.Show();
-                if (opcaoEscolhida == 7) decisores.Show();
-                //if (opcaoEscolhida == 8) ModuloAv2Item3();
+                if (opcaoEscolhida == 7) decisorAV2.Show();
+                if (opcaoEscolhida == 8) reconhecedorAV2.Show();
                 //if (opcaoEscolhida == 9) ModuloAv2Item4();
                 //if (opcaoEscolhida == 10) ModuloAv2Item5();
 

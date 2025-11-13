@@ -2,9 +2,9 @@ using System;
 
 namespace csharp_toolkit
 {
-    internal class Decisores
+    internal class DecisorAV2
     {
-        public Decisores() { }
+        public DecisorAV2() { }
         public void Show()
         {
             while (true)
