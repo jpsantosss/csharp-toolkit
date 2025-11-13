@@ -35,7 +35,7 @@ namespace csharp_toolkit
                         if (c != 'a' && c != 'b') return false;
                     return true;
                 }
-                // Pergunta se o usuário deseja testar outra cadeia
+                // Pergunta se o usuário deseja testar novamente
                 Console.WriteLine("\nDeseja testar novamente? (S/N)");
                 string? resposta = Console.ReadLine();
                 if (resposta == null || resposta.Trim().ToUpper() != "S")
