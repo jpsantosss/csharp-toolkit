@@ -1,0 +1,6 @@
+[
+    {"texto": "Encontrar o maior número primo até 1000.", "tipo": "P"},
+    {"texto": "Número 997.", "tipo": "I"},
+    {"texto": "Determinar se um grafo é conexo.", "tipo": "P"},
+    {"texto": "Grafo com 5 vértices e 6 arestas.", "tipo": "I"}
+]
