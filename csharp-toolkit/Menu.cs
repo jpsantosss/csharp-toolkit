@@ -19,7 +19,7 @@ namespace csharp_toolkit
             ProblemaInstancia problemainstancia = new ProblemaInstancia();
             DecisorAV2 decisorAV2 = new DecisorAV2();
             ReconhecedorAV2 reconhecedorAV2 = new ReconhecedorAV2();
-            Detector detecotr = new Detector();
+            Detector detector = new Detector();
 
 
 
@@ -56,7 +56,7 @@ namespace csharp_toolkit
                 if (opcaoEscolhida == 6) problemainstancia.Show();
                 if (opcaoEscolhida == 7) decisorAV2.Show();
                 if (opcaoEscolhida == 8) reconhecedorAV2.Show();
-                if (opcaoEscolhida == 9) ModuloAv2Item4();
+                if (opcaoEscolhida == 9) detector.Show();
                 //if (opcaoEscolhida == 10) ModuloAv2Item5();
 
                 Console.WriteLine();
